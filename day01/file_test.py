@@ -17,22 +17,22 @@
                     pass
                 
 '''
-with open('students.txt', 'w', encoding='utf-8') as file:
+with open('day01/students.txt', 'w', encoding='utf-8') as file:
     file.write("姓名：赵六, 年龄：23, 专业：软件工程\n")
     file.write("姓名：李四, 年龄：23, 专业：人工智能\n")
     file.write("姓名：王五, 年龄：21, 专业：数据科学\n")
 
 
-with open('students.txt', 'r', encoding='utf-8') as file:
+with open('day01/students.txt', 'r', encoding='utf-8') as file:
     content = file.read()
     print("\n======== 读取文件内容 ========")
     print(content)
 
 
-with open('students.txt', 'a', encoding='utf-8') as file:
+with open('day01/students.txt', 'a', encoding='utf-8') as file:
     file.write("姓名：赵六, 年龄：23, 专业：软件工程\n")
 
-with open('students.txt', 'r', encoding='utf-8') as file:
+with open('day01/students.txt', 'r', encoding='utf-8') as file:
     content = file.read()
     print("\n======== 读取追加后的文件内容 ========")
     print(content)

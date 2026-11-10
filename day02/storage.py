@@ -24,7 +24,7 @@ def load_records():
 def save_records(records):
     with open(RECORDS_FILE, 'w', encoding='utf-8') as f:
         json.dump(
-            records,
+            records,    
             f,
             ensure_ascii=False,
             indent=4
